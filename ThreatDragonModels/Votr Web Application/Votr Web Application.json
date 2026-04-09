@@ -914,6 +914,60 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
+            },
+            "labels": [
+              "Session token"
+            ],
+            "id": "ac4f2031-eebd-48aa-9fa8-5ede4ab300a2",
+            "source": {
+              "x": 646,
+              "y": 90
+            },
+            "target": {
+              "cell": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
+              "port": "1099a13a-80f8-4e29-8747-acdf5d0f83f9"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 160
+              }
+            ]
+          },
+          {
             "position": {
               "x": 220.74999999999983,
               "y": 63
@@ -1491,7 +1545,7 @@
           {
             "position": {
               "x": 590,
-              "y": 43
+              "y": 30
             },
             "size": {
               "width": 112.5,
@@ -1680,6 +1734,7 @@
                 "11fd0f21-9624-4f97-850f-066c97f5482f",
                 "ea8c739d-bba6-4dd8-82fd-545a3833c621",
                 "d8478f12-6942-4873-be77-3cd8b2ca37ab",
+                "ac4f2031-eebd-48aa-9fa8-5ede4ab300a2",
                 "91ccf804-a9b8-45ca-ab35-992337903633",
                 "b9018754-ae91-46c7-811b-a9b533936868"
               ],
