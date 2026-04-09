@@ -576,6 +576,144 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Scarping requests",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Scarping requests"
+            ],
+            "id": "11fd0f21-9624-4f97-850f-066c97f5482f",
+            "source": {
+              "cell": "347295b0-3680-4a5d-9d4b-c44ecdec9111",
+              "port": "2016cb46-f311-414e-80ce-964be0a55b39"
+            },
+            "target": {
+              "cell": "97731369-531c-4c22-b017-8428cff90ac1",
+              "port": "1099a13a-80f8-4e29-8747-acdf5d0f83f9"
+            },
+            "vertices": [
+              {
+                "x": 1030,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "698758d5-c6df-4d9f-be4d-2c90b3c4216d",
+            "source": {
+              "x": 737,
+              "y": 85
+            },
+            "target": {
+              "x": 1150,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "request for data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "request for data"
+            ],
+            "id": "27a061da-9640-48ac-bd28-9207f847eb0f",
+            "source": {
+              "x": 726,
+              "y": 280
+            },
+            "target": {
+              "cell": "97731369-531c-4c22-b017-8428cff90ac1",
+              "port": "2005b935-d71c-4970-85b5-be05f8c2ecd2"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 320
+              }
+            ]
+          },
+          {
             "position": {
               "x": 220.74999999999983,
               "y": 63
@@ -694,7 +832,7 @@
           },
           {
             "position": {
-              "x": 851.75,
+              "x": 901.75,
               "y": 43
             },
             "size": {
@@ -703,7 +841,7 @@
             },
             "attrs": {
               "text": {
-                "text": "AIS2 Servers"
+                "text": "AIS2"
               },
               "body": {
                 "stroke": "#333333",
@@ -799,7 +937,7 @@
             "zIndex": 12,
             "data": {
               "type": "tm.Actor",
-              "name": "AIS2 Servers",
+              "name": "AIS2",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
