@@ -29,71 +29,6 @@
         "cells": [
           {
             "position": {
-              "x": 151.99999999999983,
-              "y": 170.00000000000057
-            },
-            "size": {
-              "width": 250,
-              "height": 200
-            },
-            "attrs": {
-              "label": {
-                "text": "Internet"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "a10125fd-004a-44d9-b4a8-dffb49de91c4",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "containedElements": [
-                "5170eb10-abe9-48ec-8c74-b5ad508c28ef"
-              ],
-              "crossingFlows": [
-                "76b24277-4066-42a3-b75f-6b3e2c5c9d28",
-                "d67a2468-f1c7-4097-8e4a-656ec9f055dc"
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 563,
-              "y": 180.00000000000057
-            },
-            "size": {
-              "width": 520,
-              "height": 200
-            },
-            "attrs": {
-              "label": {
-                "text": "Public Cloud"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "c54864d8-740f-40cb-bbb9-6ba008a336b6",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "containedElements": [
-                "09b86abf-65dd-49c2-9746-0cf9282f82a1",
-                "97731369-531c-4c22-b017-8428cff90ac1"
-              ],
-              "crossingFlows": [
-                "76b24277-4066-42a3-b75f-6b3e2c5c9d28",
-                "d67a2468-f1c7-4097-8e4a-656ec9f055dc"
-              ]
-            }
-          },
-          {
-            "position": {
               "x": 211.99999999999983,
               "y": 220.00000000000057
             },
@@ -103,7 +38,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web UI"
+                "text": "Web UI\n(Votrfront)"
               },
               "body": {
                 "stroke": "#333333",
@@ -199,7 +134,7 @@
             "id": "5170eb10-abe9-48ec-8c74-b5ad508c28ef",
             "data": {
               "type": "tm.Process",
-              "name": "Web UI",
+              "name": "Web UI\n(Votrfront)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -222,7 +157,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Service"
+                "text": "Bussiness logic\n(fladgejt)"
               },
               "body": {
                 "stroke": "#333333",
@@ -318,7 +253,7 @@
             "id": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
             "data": {
               "type": "tm.Process",
-              "name": "Web Service",
+              "name": "Bussiness logic\n(fladgejt)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -332,16 +267,16 @@
           },
           {
             "position": {
-              "x": 893,
-              "y": 225.00000000000057
+              "x": 883,
+              "y": 215.00000000000057
             },
             "size": {
-              "width": 120,
-              "height": 110
+              "width": 150,
+              "height": 130
             },
             "attrs": {
               "text": {
-                "text": "PostgresSQL"
+                "text": "Scraping process\n(aisikl)"
               },
               "body": {
                 "stroke": "#333333",
@@ -437,7 +372,7 @@
             "id": "97731369-531c-4c22-b017-8428cff90ac1",
             "data": {
               "type": "tm.Process",
-              "name": "PostgresSQL",
+              "name": "Scraping process\n(aisikl)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -504,7 +439,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "web response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -513,50 +448,64 @@
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "HTTPS",
               "threats": [],
-              "trustBoundaryIds": [
-                "a10125fd-004a-44d9-b4a8-dffb49de91c4",
-                "c54864d8-740f-40cb-bbb9-6ba008a336b6"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
+              "web response"
+            ],
+            "id": "d67a2468-f1c7-4097-8e4a-656ec9f055dc",
+            "source": {
+              "cell": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
+              "port": "2005b935-d71c-4970-85b5-be05f8c2ecd2"
+            },
+            "target": {
+              "cell": "5170eb10-abe9-48ec-8c74-b5ad508c28ef",
+              "port": "bedbb764-d505-4937-852b-150f4115f25d"
+            },
+            "vertices": [
               {
-                "attrs": {
-                  "label": {
-                    "text": "Data Flow"
-                  },
-                  "labelText": {
-                    "text": "",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
+                "x": 470,
+                "y": 330
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "web request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "web request"
             ],
             "id": "76b24277-4066-42a3-b75f-6b3e2c5c9d28",
             "source": {
@@ -594,7 +543,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Scraping results",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -603,64 +552,26 @@
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "HTTPS",
               "threats": [],
-              "trustBoundaryIds": [
-                "a10125fd-004a-44d9-b4a8-dffb49de91c4",
-                "c54864d8-740f-40cb-bbb9-6ba008a336b6"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Data Flow"
-                  },
-                  "labelText": {
-                    "text": "",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
+              "Scraping results"
             ],
-            "id": "d67a2468-f1c7-4097-8e4a-656ec9f055dc",
+            "id": "373e210b-bab0-4a36-bc74-2757dd58b4f3",
             "source": {
-              "cell": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
-              "port": "2005b935-d71c-4970-85b5-be05f8c2ecd2"
+              "cell": "347295b0-3680-4a5d-9d4b-c44ecdec9111",
+              "port": "2016cb46-f311-414e-80ce-964be0a55b39"
             },
             "target": {
-              "cell": "5170eb10-abe9-48ec-8c74-b5ad508c28ef",
-              "port": "bedbb764-d505-4937-852b-150f4115f25d"
+              "cell": "97731369-531c-4c22-b017-8428cff90ac1",
+              "port": "1099a13a-80f8-4e29-8747-acdf5d0f83f9"
             },
             "vertices": [
               {
-                "x": 470,
-                "y": 330
+                "x": 850,
+                "y": 160
               }
             ]
           },
@@ -673,7 +584,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
+                  "name": ""
                 },
                 "strokeDasharray": null
               }
@@ -684,13 +595,65 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Scraping request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Scraping request"
+            ],
+            "id": "4c7d2de2-9c25-4aa9-b189-e385e8152be0",
+            "source": {
+              "cell": "97731369-531c-4c22-b017-8428cff90ac1",
+              "port": "1099a13a-80f8-4e29-8747-acdf5d0f83f9"
+            },
+            "target": {
+              "cell": "347295b0-3680-4a5d-9d4b-c44ecdec9111",
+              "port": "2016cb46-f311-414e-80ce-964be0a55b39"
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Processed AIS2 data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
@@ -698,42 +661,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Data Flow"
-                  },
-                  "labelText": {
-                    "text": "",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
+              "Processed AIS2 data"
             ],
             "id": "91ccf804-a9b8-45ca-ab35-992337903633",
             "source": {
@@ -865,8 +793,8 @@
           },
           {
             "position": {
-              "x": 751,
-              "y": 53
+              "x": 851.75,
+              "y": 43
             },
             "size": {
               "width": 112.5,
@@ -978,13 +906,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ],
