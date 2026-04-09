@@ -450,7 +450,9 @@
               "isPublicNetwork": false,
               "protocol": "HTTPS",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "Scraping results"
@@ -502,7 +504,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "Scarping requests"
@@ -706,7 +710,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "processed data"
@@ -810,7 +816,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "high level commands"
@@ -936,7 +944,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "Session token"
@@ -1222,7 +1232,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               " AIS2 data"
@@ -1678,7 +1690,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "9b47ac5e-b536-42b3-8864-ef6a2e534150"
+              ]
             },
             "labels": [
               "Authentication request"
@@ -1715,16 +1729,27 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "373e210b-bab0-4a36-bc74-2757dd58b4f3",
+                "11fd0f21-9624-4f97-850f-066c97f5482f",
+                "ea8c739d-bba6-4dd8-82fd-545a3833c621",
+                "d8478f12-6942-4873-be77-3cd8b2ca37ab",
+                "ac4f2031-eebd-48aa-9fa8-5ede4ab300a2",
+                "91ccf804-a9b8-45ca-ab35-992337903633",
+                "b9018754-ae91-46c7-811b-a9b533936868"
+              ],
+              "containedElements": [
+                "09b86abf-65dd-49c2-9746-0cf9282f82a1",
+                "97731369-531c-4c22-b017-8428cff90ac1"
+              ]
             },
             "labels": [
               ""
             ],
             "id": "9b47ac5e-b536-42b3-8864-ef6a2e534150",
             "source": {
-              "x": 510,
-              "y": 90
+              "x": 490,
+              "y": 130
             },
             "target": {
               "x": 1120,
@@ -1742,56 +1767,6 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -1803,6 +1778,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "A product security team",
-    "threatTop": 3
+    "threatTop": 6
   }
 }
