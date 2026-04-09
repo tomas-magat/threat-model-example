@@ -571,59 +571,7 @@
             "vertices": [
               {
                 "x": 850,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Scraping request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "HTTPS",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Scraping request"
-            ],
-            "id": "4c7d2de2-9c25-4aa9-b189-e385e8152be0",
-            "source": {
-              "cell": "97731369-531c-4c22-b017-8428cff90ac1",
-              "port": "1099a13a-80f8-4e29-8747-acdf5d0f83f9"
-            },
-            "target": {
-              "cell": "347295b0-3680-4a5d-9d4b-c44ecdec9111",
-              "port": "2016cb46-f311-414e-80ce-964be0a55b39"
-            },
-            "vertices": [
-              {
-                "x": 980,
-                "y": 160
+                "y": 180
               }
             ]
           },
@@ -903,8 +851,8 @@
               "y": 280
             },
             "target": {
-              "cell": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
-              "port": "bedbb764-d505-4937-852b-150f4115f25d"
+              "x": 730,
+              "y": 330
             },
             "vertices": [
               {
