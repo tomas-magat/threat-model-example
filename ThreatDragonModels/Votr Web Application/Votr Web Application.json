@@ -628,40 +628,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "698758d5-c6df-4d9f-be4d-2c90b3c4216d",
-            "source": {
-              "x": 737,
-              "y": 85
-            },
-            "target": {
-              "x": 1150,
-              "y": 130
-            },
-            "vertices": [
-              {
-                "x": 790,
-                "y": 130
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -714,6 +680,40 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "9b47ac5e-b536-42b3-8864-ef6a2e534150",
+            "source": {
+              "x": 530,
+              "y": 103
+            },
+            "target": {
+              "x": 1120,
+              "y": 90
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 140
+              }
+            ]
+          },
+          {
             "position": {
               "x": 220.74999999999983,
               "y": 63
@@ -734,6 +734,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -817,7 +818,6 @@
               ]
             },
             "id": "56939f6b-ab94-468c-80ad-e884b7500f89",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Browser",
@@ -851,6 +851,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -934,7 +935,6 @@
               ]
             },
             "id": "347295b0-3680-4a5d-9d4b-c44ecdec9111",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "AIS2",
@@ -989,8 +989,8 @@
               "y": 280
             },
             "target": {
-              "x": 730,
-              "y": 330
+              "cell": "09b86abf-65dd-49c2-9746-0cf9282f82a1",
+              "port": "bedbb764-d505-4937-852b-150f4115f25d"
             },
             "vertices": [
               {
@@ -1023,6 +1023,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1106,7 +1107,6 @@
               ]
             },
             "id": "479d341a-d2b9-484a-80c2-27e3a08b9936",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Configuration\nfiles",
@@ -1147,6 +1147,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1230,7 +1231,6 @@
               ]
             },
             "id": "0fc8dd41-1bba-4800-8fb3-db9575c68bdb",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "Session store",
@@ -1282,6 +1282,123 @@
                 "y": 160
               }
             ]
+          },
+          {
+            "position": {
+              "x": 606,
+              "y": 43
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Uniba login"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "83df0df9-b13d-45cc-8870-d0ed05ea3877"
+                },
+                {
+                  "group": "right",
+                  "id": "a1e55ea7-e88b-411e-b6bf-b0081a2030be"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bdc8c750-0dc1-4245-a8dd-0302d84f563e"
+                },
+                {
+                  "group": "left",
+                  "id": "4eb9cb46-50d3-4bc6-8060-732ffbe1c79d"
+                }
+              ]
+            },
+            "id": "b516ed6b-800f-4e0c-9360-8fa5a2c0e8f7",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Uniba login",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": "Data flow diagram"
